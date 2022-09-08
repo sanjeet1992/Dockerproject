@@ -7,6 +7,6 @@ WORKDIR /var/ww/html/
 RUN unzip yogasana.zip
 RUN cp -rvf yogasana-html/* .
 RUN rm -rf yogasana.zip
-EXPOSE 80
+#EXPOSE 80
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
